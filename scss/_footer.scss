@@ -1,0 +1,141 @@
+footer {
+	overflow: hidden;
+	.footer {
+		background: $grey_color;
+		padding: 62px 0 40px 0;
+		@media screen and (max-width: 767px) {
+			text-align: center;
+		}
+		p {
+			font: 400 normal $main_font-size+6 $main_font-family;
+			color: $yellow-color;
+			text-align: center;
+			@media screen and (max-width: 767px) {
+				margin-top: 40px;
+			}
+		}
+		ul {
+			&:first-child {
+				margin-bottom: 40px;
+			}
+			&:nth-child(2) {
+				li {
+					&:nth-child(2) {
+						text-align: center;
+						@media screen and (max-width: 767px) {
+							margin-top: 50px;
+						}
+					}
+				}
+			}
+			li {
+				ul {
+					li {
+						font: 400 normal 16px $thirth_font-family;
+						line-height: 27.12px;
+						margin-bottom: 10px;
+						a {
+							color: $main_color;
+							letter-spacing: 0.8px;
+							transition: 0.3s all;
+							&:hover {
+								text-decoration: none;
+								color: $yellow_color;
+							}
+						}
+					}
+				}
+				&:last-child {
+					ul {
+						max-width: 150px;
+						margin: 0 auto;
+						li {
+							position: relative;
+							&:before {
+								content: '';
+								position: absolute;
+								background: url(../images/footer-sprite.png)no-repeat;
+								height: 20px;
+								width: 20px;
+								left: -32px;
+								top: 12px;
+							}
+							&:nth-child(2) {
+								&:before {
+									height: 14px;
+									left: -32px;
+									top: 5px;
+									background-position: -26px;
+								}
+							}
+							&:last-child {
+								&:before {
+									left: -28px;
+									width: 14px;
+									background-position: -54px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		&__logo {
+			background: url(../images/logo.svg)no-repeat;
+			width: 42px;
+			height: 42px;
+			position: relative;
+			display: block;
+			padding-left: 100px;
+			@media screen and (max-width: 767px) {
+				margin: 0 auto;
+				padding-left: 150px;
+			}
+			&:after {
+				content: '';
+				width: 88px;
+				height: 14px;
+				background: url(../images/pssc.svg)no-repeat;
+				position: absolute;
+				top: 12px;
+				left: 60px;
+			}
+		}
+		&__madein {
+			background: url(../images/unit_space_logo.svg)no-repeat;
+			background-size: contain;
+			width: 100px;
+			height: 53px;
+			display: block;
+			position: relative;
+			color: $main_color;
+			float: right;
+			right: 30px;
+			top: -10px;
+			@media screen and (max-width: 767px) {
+				right: 0px;
+				display: inline-block;
+				float: none;
+				margin: 0 auto;
+				margin-top: 50px;
+				margin-left: 80px;
+			}
+			a {
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+			&:hover {
+				text-decoration: none;
+			}
+			&:before {
+				content: 'Сделано в  ';
+				position: absolute;
+				left: -95px;
+				top: 30%;
+				font: 400 normal 16px $main_font-family;
+
+			}
+		}
+	}
+}

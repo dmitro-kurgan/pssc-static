@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/style.css" type="text/css"/>
+</head>
+<body>
+<header>
+	<div class="header">
+		<div class="container">
+			<div class="header-top">
+				<div class="header-top__left">
+				</div>
+				<div class="header-mob-center"></div>
+				<div class="header-mob-right">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+		      		</button>
+				</div>
+				<ul class="header-top__menu">
+					<li class="header-top__menu-list"><a href="./">Главная</a></li>
+					<li class="header-top__menu-list"><a href="./projects.html">Наши 
+					проекты</a></li>
+					<li class="header-top__menu-list menu-item-has-children">
+						<a href="#">Строительные 
+					услуги</a>
+						<ul class="sub-menu">
+							<li class="sub-menu-list">
+								<a href="./services.html">Строительно-монтажные работы</a>
+							</li>
+							<li class="sub-menu-list">
+								<a href="./services.html">Строительство и ремонт дорог</a>
+							</li>
+							<li class="sub-menu-list">
+								<a href="./services.html">Инженерные коммуникации<br> и системы очистки сточных вод</a>
+							</li>
+							<li class="sub-menu-list">
+								<a href="./services.html">Фасадные работы</a>
+							</li>
+						</ul>
+					</li>
+					<li class="header-top__menu-list"><a href="./vehicle.html">Аренда 
+					техники</a></li>
+					<li class="header-top__menu-list"><a href="./company.html">О компании</a></li>
+					<li class="header-top__menu-list current-menu-item"><a href="./contacts.html">Контакты</a></li>
+					<li class="header-top__menu-list"><a href="./blog.html">Блог</a></li>
+				</ul>
+				<div class="header-top__right">
+					<ul class="header__language">
+						<li><a href="#">Українська</a></li>
+						<li class="current-lang"><a href="#">Русский</a></li>
+						<li><a href="#">English</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="header-bottom">
+				<a href="./" class="header-bottom__left">
+					<div class="header-logo">
+						<span class="header-logo__name"></span>
+					</div>
+					<p class="header-logo__text">ПЕРВАЯ СЛОБОЖАНСКАЯ СТРОИТЕЛЬНАЯ КОМПАНИЯ</p>
+				</a>
+				<div class="header-bottom__center">
+					<p>Капитальное строительство и ремонт объектов гражданского и промышленного назначения</p>
+				</div>
+				<div class="header-bottom__right">
+					<span class="header-bottom__right-tel"></span>
+					<div class="header-telephone">
+						<a href="tel:+380503432355" data-toggle="modal" data-target="#modal-call">+380503432355</a>
+						<a href="tel:+380504050910" data-toggle="modal" data-target="#modal-call">+380504050910</a>
+						<button class="btn main-btn" data-toggle="modal" data-target="#modal-call">Заказать обратный звонок</button>
+					</div>
+				</div>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="header-top__menu nav navbar-nav">
+				</ul>
+				<div class="navbar-collapse__bottom">
+					<div class="container"></div>
+				</div>
+			</div>	
+		</div>
+	</div>
+</header>
+<div class="content">
+	<section class="contacts banner" id="contacts">
+		<div class="overlay">
+		<div class="container">
+			<div class="contacts-adress-map">
+				<h1 class="main-title">Контакты</h1>
+					<ul class="row">
+						<li class="col-sm-7">
+							<div class="contacts-map">
+								<div id="map"></div>
+							</div>
+						</li>
+						<li class="col-sm-5">
+							<div class="contacts-adress">
+								<div class="contacts-adress-box">
+									<p class="contacts-adress-box-title">Адрес</p>
+									<p class="contacts-adress-box-text">г.Харьков, ул.Велозаводская, 2/5</p>
+								</div>
+								<div class="contacts-adress-box">
+									<p class="contacts-adress-box-title">E-mail</p>
+									<p class="contacts-adress-box-text"><a href="mailto:pssc@ukr.net">pssc@ukr.net</a></p>
+								</div>
+								<div class="contacts-adress-box">
+									<p class="contacts-adress-box-title">Офис-менеджер:<br>Наталья</p>
+									<p class="contacts-adress-box-text"><a href="tel:+380504050910">+380504050910</a></p>
+								</div>
+								<div class="contacts-adress-box">
+									<p class="contacts-adress-box-title">Сменно-договорной отдел</p>
+									<p class="contacts-adress-box-text"><a href="tel:+380503042327">+380503042327</a></p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="form-pg-2 form-contacts">
+			<div class="form-pg-2-overlay form-contacts-overlay">
+				<div class="container">
+					<ul class="row">
+						<li class="col-md-6">
+							<form>
+								<h2>Написать нам</h2>
+								<div class="form-group clearfix">
+									<!-- <label for="email">Email address:</label> -->
+									<input type="name" class="form-control" id="name" placeholder="Имя"/>
+									<input type="tel" class="form-control" id="tel" placeholder="Номер телефона"/>
+								</div>
+								<div class="form-group">
+									<!-- <label for="pwd">Password:</label> -->
+									<input type="email" class="form-control" id="email" placeholder="E-mail"/>
+								</div>
+								<div class="form-group">
+									<textarea name="" id="" placeholder="Комментарий"></textarea>
+								</div>
+								<button type="submit" class="btn main-btn green-btn">Заказать звонок</button>
+							</form>
+						</li>
+						<li class="col-md-6">
+							<div class="contacts-staff">
+								<ul class="row">
+									<li class="col-sm-6">
+										<div class="contacts-staff-box">
+											<p class="contacts-staff-box-name">Директор<br>Валерий Михайлович</p>
+											<p class="contacts-staff-box-tel"><a href="tel:+380503432355">+380503432355</a></p>
+											<div class="contacts-staff-box-img">
+												<img src="./images/contacts/staff.jpg" alt="">
+											</div>
+										</div>
+									</li>
+									<li class="col-sm-6">
+										<div class="contacts-staff-box">
+											<p class="contacts-staff-box-name">Бухгалтер<br>Иван Иванович</p>
+											<p class="contacts-staff-box-tel"><a href="tel:+380123456789">+380123456789</a></p>
+											<div class="contacts-staff-box-img">
+												<img src="./images/contacts/staff.jpg" alt="">
+											</div>
+										</div>
+									</li>
+								</ul>
+								<ul class="row">
+									<li class="col-sm-6">
+										<div class="contacts-staff-box">
+											<p class="contacts-staff-box-name">Сметчик<br>Игнат Петрович</p>
+											<p class="contacts-staff-box-tel"><a href="tel:+380123456789">+380123456789</a></p>
+											<div class="contacts-staff-box-img">
+												<img src="./images/contacts/staff.jpg" alt="">
+											</div>
+										</div>
+									</li>
+									<li class="col-sm-6">
+										<div class="contacts-staff-box">
+											<p class="contacts-staff-box-name">Главный инженер<br>Людвиг Аристархович</p>
+											<p class="contacts-staff-box-tel"><a href="tel:+380123456789">+380123456789</a></p>
+											<div class="contacts-staff-box-img">
+												<img src="./images/contacts/staff.jpg" alt="">
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+<footer>
+	<div class="footer">
+		<div class="container">
+			<ul class="row">
+				<li class="col-sm-3">
+					<ul>
+						<li><a href="./">Главная</a></li>
+						<li><a href="./projects.html">Наши проекты</a></li>
+						<li><a href="./vehicle.html">Аренда техники</a></li>
+						<li><a href="#">Фасадные работы</a></li>
+					</ul>	
+				</li>
+				<li class="col-md-4 col-sm-3">
+					<ul>
+						<li><a href="#">Строительно-монтажные работы</a></li>
+						<li><a href="#">Строительство и ремонт дорог</a></li>
+						<li><a href="#">Инженерные коммуникации и системы очистки сточных вод</a></li>
+					</ul>
+				</li>
+				<li class="col-sm-3">
+					<ul>
+						<li><a href="./company.html">О компании</a></li>
+						<li class="current-menu-item"><a href="./contacts.html">Контакты</a></li>
+						<li><a href="./blog.html">Блог</a></li>
+					</ul>
+				</li>
+				<li class="col-md-2 col-sm-3">
+					<ul>
+						<li>
+							<a href="tel:+380503432355">+380503432355</a><br>
+							<a href="tel:+380504050910">+380504050910</a>
+						</li>
+						<li><a href="mailto:pssc@ukr.net">pssc@ukr.net</a></li>
+						<li>г. Харьков, ул.<br> Велозаводская 2/5</li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="row">
+				<li class="col-sm-4">
+					<a href="./" class="footer__logo"></a>
+				</li>
+				<li class="col-sm-4">
+					<img src="./images/slogan-footer.svg" alt="">
+				</li>
+				<li class="col-sm-4">
+					<span class="footer__madein">
+						<a href="http://unitspace.top/"></a>
+					</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<!-- =====================BUTTON-TO-TOP======================== -->
+<a id="back-to-top" href="#" class="btn btn-primary back-to-top" role="button" title="Вира!" data-toggle="tooltip" data-placement="left"></a>
+<!-- ======================MODAL-CALL========================== -->
+<div id="modal-call" class="modal fade in modal-call" role="dialog">
+	<div class="modal-dialog">
+	    <div class="modal-content">
+	    	<div class="modal-header">
+	    		<button type="button" class="close" data-dismiss="modal">
+	    			<span class="close-cross"></span>
+	    		</button>
+	        	<h4 class="modal-title">Заказать звонок</h4>
+	        	<p>Капитальное строительство и ремонт объектов
+гражданского и промышленного назначения</p>
+	      	</div>
+	      	<div class="modal-body">
+				<form>
+					<div class="form-group">
+						<!-- <label for="email">Email address:</label> -->
+						<input type="name" class="form-control" id="name" placeholder="Имя">
+					</div>
+					<div class="form-group">
+						<!-- <label for="pwd">Password:</label> -->
+						<input type="tel" class="form-control" id="tel" placeholder="Номер телефона">
+					</div>
+					<button type="submit" class="btn main-btn green-btn">Заказать звонок</button>
+				</form>	
+	      	</div>
+	    </div>
+	</div>
+</div>
+<script src="js/jquery1.12.4.jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	var map;
+	function initMap() {
+	    map = new google.maps.Map(document.getElementById('map'), {
+	        center: {lat: 49.974473, lng: 36.361251},
+	        scrollwheel:false,
+	        zoom: 17
+		});
+	var markerImage = new google.maps.MarkerImage(
+				'images/location.png',
+				new google.maps.Size(68, 119),
+				new google.maps.Point(0, 0),
+				new google.maps.Point(30, 85)
+	);
+	var marker = new google.maps.Marker({
+		    position: {lat: 49.974473, lng: 36.361251},
+		    map: map,
+		    title: 'ПССК',
+		    icon: markerImage
+		});
+	}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDe9ETwoz8bLgqdRniseIzzVB5rvIpJuq4&callback=initMap" async defer></script>
+<script src="js/main.js"></script>
+</body>
+</html>
